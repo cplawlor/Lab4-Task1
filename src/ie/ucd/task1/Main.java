@@ -36,7 +36,7 @@ public class Main {
        }
 		
 		//Test if drinker is drunk
-		System.out.println("Is " + drinker.getFirstName() + " drunk?: " + drinker.drunk()+ "\n");
+		System.out.println("Is " + drinker.getFirstName() + " drunk?: " + drinker.isDrunk()+ "\n");
 		
 	
 		

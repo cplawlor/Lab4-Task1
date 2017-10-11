@@ -14,6 +14,9 @@ public class NotDrinker extends Person {
 		this.lastName = lastName;
 		this.weight = weight;
 	}
+	/*Overrides drink to ensure they can not drink Alcoholic drinks
+	 * returns true if drink successfully drunk
+	 */
 	
 	@Override
 	public boolean drink(Drink drink) {
