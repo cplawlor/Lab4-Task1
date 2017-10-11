@@ -16,20 +16,22 @@ public class Drinker extends Person {
 		this.weight=weight;
 	}
 	
-	public void drunk() {
-		 if (weight/numberOfDrinks <= 10){
-			 System.out.println(firstName +" is drunk");
-		 }
+	public boolean drunk() {
+		 if (weight/numberOfDrinks <= 10)
+			 return true;
 		 else {
-			 System.out.println(firstName +" can keep drinking");
+			 return false;
 		 }
 	 }
 
 	@Override
 	public boolean drink(Drink drink) {
 		numberOfDrinks += 1;
-		System.out.println(firstName + " drank some "+ drink.getName());
-		return false;
+		return true;
+	}
+	
+	public int getDrinks() {
+		return numberOfDrinks;
 	}
 
 

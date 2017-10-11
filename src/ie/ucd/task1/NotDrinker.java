@@ -18,12 +18,10 @@ public class NotDrinker extends Person {
 	@Override
 	public boolean drink(Drink drink) {
 		if (drink instanceof AlcoholicDrink) {
-			System.out.println(firstName +" can not drink alcohol");
-			return true;
+			return false;
 		}
 		else {
-			System.out.println(firstName +" drank the "+drink.getName());
-			return false;
+			return true;
 		}
 	}
 
